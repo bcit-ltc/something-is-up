@@ -12,7 +12,7 @@ const audio = (context => {
         assetUrls[item.replace('./', '')] = context(item);
     });
     return assetUrls;
-})(require.context("../assets/audio/", false, /(.wav)$/));
+})(require.context("../assets/audio/", false, /(.wav)|(.mp4)$/));
 
 // convienience method to replace a state array in a react component's state
 class UtilityFunctions {
